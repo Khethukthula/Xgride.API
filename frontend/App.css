@@ -1,0 +1,238 @@
+/* General reset and styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 80px;
+  margin-right: 40px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between search input and nav links */
+}
+
+.search-input {
+  padding: 8px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 200px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+/* Navigation links embedded inside the search bar container */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 15px; /* Adds space between links */
+  margin-left: 10px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+
+.search-box {
+  position: relative;
+  margin-left: auto;
+}
+
+.search-input {
+  padding: 8px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 200px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+
+
+/* Main section styling */
+.main-section {
+  position: relative;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  padding-left: 50px; /* Padding to adjust position */
+  z-index: 5;
+}
+
+/* Transparent green overlay */
+.green-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%; /* Adjust width if necessary */
+  height: 100%; /* Extend to cover the entire height */
+  background: rgba(2, 237, 2, 0.3); /* Light green transparent background */
+  transform: skewX(-20deg); /* Skew to the right */
+  transform-origin: top left;
+  z-index: 1;
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+}
+
+/* Content overlay on top of the green overlay */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+  max-width: 600px;
+  text-align: left; /* Align text to the left */
+  margin-left: 20px; /* Move content to the left */
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left; /* Ensure title is aligned left */
+}
+
+.overlay-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: left; /* Align paragraph to the left */
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 20px;
+}
+
+.register-btn,
+.login-btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 110px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.register-btn {
+  background-color: yellow;
+  color: black;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #ccc;
+}
+
+/* Background image styling */
+.background {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Ensure full viewport height */
+  z-index: 0;
+}
+
+.background-image {
+  width: 100%;
+  height: 100vh; /* Ensure full viewport height */
+  object-fit: cover;
+  opacity: 0.8; /* Adjust transparency */
+}
+
+/* Login modal styles */
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}

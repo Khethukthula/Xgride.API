@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Tshwane</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            width: 150px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        /* Search bar */
+        .search-bar {
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            padding: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-bar input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .main {
+            background-color: #ffe700;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .main div {
+            text-align: center;
+            width: 150px;
+        }
+
+        .main div img {
+            width: 50px;
+        }
+
+        .main div p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .updates {
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: left;
+        }
+
+        .updates h2 {
+            font-size: 24px;
+            color: black;
+        }
+
+        .updates img {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+        <img src="city.png" alt="City of Tshwane Logo">
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">APPLICATION</a>
+            <a href="#">TIPS</a>
+           
+            <form class="search-bar" action="/search" method="get">
+                <input type="text" placeholder="Search..." name="q">
+                <input type="submit" value="Search">
+            </form>
+            
+            <img src="x-Grid.png" alt="x-Grid logo" style="width: 180px; height: auto;">
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <img src="application.png" alt="Application">
+            <p>APPLICATION</p>
+        </div>
+        <div>
+            <img src="tracking.png" alt="Track Application">
+            <p>TRACK APPLICATION</p>
+        </div>
+        <div>
+            <img src="profi.png" alt="Profile">
+            <p>PROFILE</p>
+        </div>
+        <div>
+            <img src="walet.png" alt="Wallet">
+            <p>WALLET</p>
+        </div>
+    </div>
+
+    
+    <div class="updates">
+        <h2>Latest Updates</h2>
+        <img src="lines.jpg" alt="Latest Updates Image">
+    </div>
+
+</body>
+</html>
